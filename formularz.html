@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Formularz kontaktowy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="kittinkstylesheet.css">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: 'Karla', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header, .footer {
+      background-color: #000;
+      color: #c266ff;
+    }
+
+  
+
+    .main-content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3em;
+      color: #ff0000;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .contact-intro {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 6px;
+      border: none;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 150px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #4b0082;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #6a0dad;
+    }
+
+    .contact-footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+   <header class="header">
+    <div class="logo-container">
+      <img src="logo2.png" alt="Logo Kittink" class="logo">
+      <span class="company-name">KITTINK</span>
+    </div>
+    <nav class="menu">
+      <a href="file:///C:/Users/JGrell/OneDrive/Documents/stronka/kittinkstudio.html#" target="_blank">STRONA GŁÓWNA</a>
+      <a href="cennik.html" target="_blank">CENNIK</a>
+      <a href="nasiartysci.html" target="_blank">NASI ARTYŚCI</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <h1>Formularz kontaktowy</h1>
+    <div class="contact-intro">
+      <p>
+        Cieszymy się, że odwiedziłeś/aś naszą stronę. Jeśli masz jakiekolwiek pytania lub chcesz nawiązać współpracę, jesteśmy tu dla Ciebie! Nasz zespół jest gotowy, aby odpowiedzieć na Twoje pytania i udzielić niezbędnej pomocy. Nie wahaj się więc skontaktować z nami, wypełniając poniższy formularz. Będziemy z Tobą w kontakcie tak szybko, jak to możliwe. Nie czekaj dłużej! Daj nam znać, jak możemy Ci pomóc. Jesteśmy gotowi, aby zrealizować Twoje cele i sprostać Twoim oczekiwaniom.
+      </p>
+    </div>
+
+    <form>
+      <input type="text" name="name" placeholder="Imię i nazwisko" required>
+      <input type="email" name="email" placeholder="Adres e-mail" required>
+      <input type="tel" name="phone" placeholder="Numer telefonu">
+      <input type="text" name="subject" placeholder="Temat wiadomości">
+      <textarea name="message" placeholder="Treść wiadomości" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+
+    <div class="contact-footer">
+      Zapraszamy również do kontaktu telefonicznego pod numerem <strong>+48 666 777 888</strong>,<br>
+      poprzez email <strong>kontakt@kittink.pl</strong> lub przez wiadomość na instagramie <strong>@kitt.ink.studio</strong>.
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="left-column">
+        <a href="REGULAMIN.pdf" target="_blank">Regulamin</a>
+      </div>
+      <div class="right-column">
+        <p>
+          Adres: ul. Kocia 44, Wrocław<br>
+          Tel: +48 666 777 888<br>
+          Mail: kontakt@kittink.pl<br>
+          IG: @kitt.ink.studio
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
